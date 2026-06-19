@@ -1,0 +1,129 @@
+/* Custom Premium Black & White Theme */
+:root {
+  scroll-behavior: smooth;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #050505;
+  --bs-body-color: #f8f9fa;
+  --bs-secondary-bg: #0f0f0f;
+  --bs-border-color: #262626;
+  --glow-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="light"] {
+  --glow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- Floating Island Navbar --- */
+.navbar-island-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  padding-top: 1.5rem;
+  pointer-events: none;
+}
+.navbar-island {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 50px;
+  box-shadow: 0 10px 30px var(--glow-color);
+  transition: all 0.3s ease;
+}
+[data-bs-theme="dark"] .navbar-island {
+  background: rgba(10, 10, 10, 0.7);
+}
+
+/* --- Text Gradients --- */
+.text-gradient {
+  background: linear-gradient(135deg, #000000, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-bs-theme="dark"] .text-gradient {
+  background: linear-gradient(135deg, #ffffff, #888888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* --- Animations & Hover Effects --- */
+.transition-all { transition: all 0.3s ease; }
+
+.hover-scale { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.hover-scale:hover { transform: translateY(-5px); }
+
+/* --- Modern Tech Stack Cards --- */
+.tech-card {
+  background-color: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+.tech-card::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, var(--glow-color), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.tech-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--bs-body-color);
+  box-shadow: 0 15px 35px var(--glow-color);
+}
+.tech-card:hover::before { opacity: 1; }
+
+.tech-badge {
+  background: transparent;
+  border: 1px solid var(--bs-border-color);
+  color: var(--bs-body-color);
+  transition: all 0.3s ease;
+}
+.tech-card:hover .tech-badge:hover {
+  background: var(--bs-body-color);
+  color: var(--bs-body-bg);
+}
+
+/* --- Buttons --- */
+.btn-contrast {
+  background-color: var(--bs-body-color);
+  color: var(--bs-body-bg);
+  border: 1px solid var(--bs-body-color);
+  border-radius: 50px;
+}
+.btn-contrast:hover {
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+.btn-outline-contrast {
+  background-color: transparent;
+  color: var(--bs-body-color);
+  border: 1px solid var(--bs-body-color);
+  border-radius: 50px;
+}
+.btn-outline-contrast:hover {
+  background-color: var(--bs-body-color);
+  color: var(--bs-body-bg);
+}
