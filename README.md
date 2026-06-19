@@ -1,16 +1,26 @@
-# React + Vite
+# Parsa Madadi - Professional Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimalist, and fully responsive personal portfolio built to showcase my skills, projects, and professional journey. Developed with React.js and styled with Bootstrap 5, featuring a sleek Dark/Light mode and glassmorphism UI elements.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [Insert your Vercel deployment link here later]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Dark & Light Mode:** Seamless theme switching with high-contrast minimalist design.
+- **Floating Glassmorphism Navbar:** Modern island-style navigation bar.
+- **Scroll Animations:** Smooth fade-in effects using `react-intersection-observer`.
+- **Responsive Design:** Flawless experience across desktop, tablet, and mobile devices.
+- **Clean Architecture:** Component-based structure using React and Vite for optimal performance.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js, Vite
+- **Styling:** Bootstrap 5.3, Custom CSS3
+- **Icons:** Bootstrap Icons
+- **Deployment:** Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+📫 Contact & Links
+GitHub: @madadiparsa
+Telegram: @Parsa_m999
+Email: [madadiparsa24@gmail.com]
